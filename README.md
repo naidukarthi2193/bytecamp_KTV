@@ -49,9 +49,9 @@ The approach consists of a mobile app and a website which has two users the gove
 ## Android App
  Our Android uses Google SDKs for Marking the Geo Coordinates of the Land from the Users 
 
- <img src="images/app1.jpg" align="left"  width="250" height="400"> 
- <img src="images/app2.jpg"  align="center" width="250" height="400">
- <img src="images/app3.jpg"   align="center" width="250" height="400">
+ <img src="images/app1.jpg" align="center"  width="250" height="400"> 
+ <img src="images/app3.jpg"  align="center" width="250" height="400">
+ <img src="images/app2.jpg"   align="center" width="250" height="400">
 
  To Reduce False Inputs the Area Marked in the Polygon should be within  ~2% of the Area mentioned in the Land Documents
 
