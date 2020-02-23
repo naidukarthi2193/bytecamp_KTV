@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LCP 6</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='./bootstrap/css/bootstrap.min.css')}}">
+    <!-- <link rel="icon" href="{{url_for('static',filename='./deep.png')}}" type="image/png" sizes="16x16"> -->
+    <script src="{{url_for('static',filename='./bootstrap/js/bootstrap.min.js')}}"></script>
+    <script src="{{url_for('static',filename='./js/plotly.js')}}"></script>
+
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js"
+        integrity="sha256-caNcSA0LvOCX90PTuEbwl+V09xPMca13CJUasl+VCtk=" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="{{url_for('static',filename='./css/styles.css')}}"> -->
+</head>
+<body>
+    <h1>Crops</h1>
+
+    <div class="good" id="rain_jf">
+        <script>
+            var graphs_population = {{ json_rain_jf | safe}};
+            var layout = {  title: 'Rainfall in Jan-Feb from 1984-2018', xaxis: { title: 'Years' }, yaxis: { title: 'mm' } };
+            Plotly.newPlot('rain_jf', graphs_population, layout);
+        </script>
+    </div>
+
+    <div class="good" id="rain_ijas">
+        <script>
+            var graphs_population = {{ json_rain_ijas | safe}};
+            var layout = {  title: 'Rainfall in June-Sept from 1984-2018', xaxis: { title: 'Years' }, yaxis: { title: 'mm' } };
+            Plotly.newPlot('rain_ijas', graphs_population, layout);
+        </script>
+    </div>
+    <div class="good" id="rain_mam">
+        <script>
+            var graphs_population = {{ json_rain_mam | safe}};
+            var layout = {  title: 'Rainfall in Mar-May from 1984-2018', xaxis: { title: 'Years' }, yaxis: { title: 'mm' } };
+            Plotly.newPlot('rain_mam', graphs_population, layout);
+        </script>
+    </div>
+    <div class="good" id="rain_ons">
+        <script>
+            var graphs_population = {{ json_rain_ons | safe}};
+            var layout = {  title: 'Rainfall in Oct-Dec from 1984-2018', xaxis: { title: 'Years' }, yaxis: { title: 'mm' } };
+            Plotly.newPlot('rain_ons', graphs_population, layout);
+        </script>
+    </div>
+
+    <div class="good" id="produce_rice">
+        <script>
+            var graphs_population = {{ json_produce_rice | safe}};
+            var layout = {  title: 'Rice Production', xaxis: { title: 'Area' }, yaxis: { title: 'kg' } };
+            Plotly.newPlot('produce_rice', graphs_population, layout);
+        </script>
+    </div>
+    <div class="good" id="produce_cotton">
+        <script>
+            var graphs_population = {{ json_produce_cotton | safe}};
+            var layout = {  title: 'Cotton Production', xaxis: { title: 'Area' }, yaxis: { title: 'kg' } };
+            Plotly.newPlot('produce_cotton', graphs_population, layout);
+        </script>
+    </div>
+    <div class="good" id="produce_sugar">
+        <script>
+            var graphs_population = {{ json_produce_sugar | safe}};
+            var layout = {  title: 'Sugarcane Production', xaxis: { title: 'Area' }, yaxis: { title: 'kg' } };
+            Plotly.newPlot('produce_sugar', graphs_population, layout);
+        </script>
+    </div>
+
+    
+    
+
+
+
+
+</body>
+</html>

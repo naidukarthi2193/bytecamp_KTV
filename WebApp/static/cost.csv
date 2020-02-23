@@ -1,0 +1,9 @@
+Crop,State,Cost of Cultivation (`/Hectare) A2+FL,Cost of Fertilizers (`/Hectare) C2,Cost of Production (`/Quintal) C2,Yield (Quintal/ Hectare) 
+SUGARCANE,Maharashtra,57673.6,85801.95,107.56,744.01
+COTTON,Maharashtra,23711.44,33116.82,2539.47,12.69
+GRAM,Maharashtra,12985.95,18679.33,2277.68,8.05
+GROUNDNUT,Maharashtra,26078.66,32683.46,3207.35,9.33
+ARHAR,Maharashtra,17130.55,25270.26,2775.8,8.72
+MOONG,Maharashtra,10780.76,15371.45,2261.24,6.7
+PADDY,Maharashtra,29664.84,46450.2,789.9,56
+WHEAT,Maharashtra,12464.4,22489.75,810.25,23.59
