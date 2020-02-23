@@ -49,9 +49,9 @@ The approach consists of a mobile app and a website which has two users the gove
 ## Android App
  Our Android uses Google SDKs for Marking the Geo Coordinates of the Land from the Users 
 
- <img src="images/app1.jpg" align="center"  width="250" height="400"> 
+ <img src="images/app1.jpg" align="left"  width="250" height="400"> 
  <img src="images/app3.jpg"  align="center" width="250" height="400">
- <img src="images/app2.jpg"   align="center" width="250" height="400">
+ <img src="images/app2.jpg"   align="left" width="250" height="400">
 
  To Reduce False Inputs the Area Marked in the Polygon should be within  ~2% of the Area mentioned in the Land Documents
 
@@ -63,3 +63,31 @@ The Crop Prediction helps the Farmers to get an Idea of the Resources requiremen
 ```bash
 pip install -r requirements.txt
 ```
+
+To Run the Flask Environment 
+```bash
+python3 main.py
+```
+The Server starts and go to localhost:5000
+```bash
+* Serving Flask app "main" (lazy loading)
+* Environment: production
+WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+* Debug mode: on
+* Restarting with stat
+* Debugger is active!
+* Debugger PIN: 822-438-218
+* Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ ```
+
+The Predictions will be shown in the website which will be easily interpreted by the farmer
+<br>
+
+![](images/pred1.jpg)
+![](images/pred2.jpg)
+
+>Contributors
+>- naidukarthi2193
+>- thirumalinambi14
+>- venkster11
