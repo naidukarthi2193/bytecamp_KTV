@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Farmer712Details"
+    android:padding="20dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:text="Name - "
+            android:textSize="20dp"
+            />
+        <TextView
+            android:id="@+id/nameTV"
+            android:layout_toRightOf="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="My name"
+            android:textSize="20dp"/>
+
+            <TextView
+                android:layout_below="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/phno"
+                android:text="Ph No - "
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_below="@+id/nameTV"
+                android:id="@+id/phnoTV"
+                android:layout_toRightOf="@+id/phno"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="My name"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_below="@+id/phno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/dist"
+                android:text="District - "
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_below="@+id/phnoTV"
+                android:id="@+id/distTV"
+                android:layout_toRightOf="@+id/dist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="My name"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_toRightOf="@+id/distTV"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/phnoTV"
+                android:layout_marginLeft="15dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/taluka"
+                android:text="Taluka - "
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:layout_below="@+id/phnoTV"
+                android:id="@+id/talukaTV"
+                android:layout_toRightOf="@+id/taluka"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="My name"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_below="@+id/dist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/village"
+                android:text="Village - "
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_below="@+id/distTV"
+                android:id="@+id/villageTV"
+                android:layout_toRightOf="@+id/village"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="My name"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_toRightOf="@+id/villageTV"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/taluka"
+                android:layout_marginLeft="15dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/div"
+                android:text="Div - "
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:layout_below="@+id/talukaTV"
+                android:id="@+id/divTV"
+                android:layout_toRightOf="@+id/div"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="My name"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/survey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Survey No - "
+                android:layout_below="@+id/village"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/surveyTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/survey"
+                android:layout_below="@id/villageTV"
+                android:text="1010012"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Status - "
+                android:layout_below="@+id/survey"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/statusTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/status"
+                android:layout_below="@id/surveyTV"
+                android:text="Not Applied"
+                android:textSize="20dp"/>
+
+            <Button
+                android:visibility="visible"
+                android:id="@+id/apply_geofenceBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/status"
+                android:text="Apply GeoFencing"/>
+            
+            <Button
+                android:id="@+id/viewLand"
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/status"
+                android:text="View Land"/>
+
+            <Button
+                android:id="@+id/viewAppl"
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/status"
+                android:text="View Application"/>
+
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

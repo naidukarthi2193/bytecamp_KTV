@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height = "420dp"
+        android:id="@+id/google_map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"/>
+    <RelativeLayout
+        android:id="@+id/land_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/google_map"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id="@+id/uid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UID"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/uidno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/uid"
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"
+            android:hint="9920200202022"
+            />
+        <TextView
+            android:id="@+id/exp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/uid"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:hint="Expected Hec:- "
+            />
+        <TextView
+            android:id="@+id/alx"
+            android:layout_toRightOf="@+id/exp"
+            android:layout_below="@+id/uidno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:hint="0"
+            />
+
+        <TextView
+            android:elevation="3dp"
+            android:id="@+id/curr_exp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/uid"
+            android:layout_toRightOf="@+id/alx"
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:hint="Currrent Hec:- "
+            />
+        <TextView
+            android:id="@+id/alx1"
+            android:elevation="3dp"
+            android:layout_toRightOf="@+id/curr_exp"
+            android:layout_below="@+id/uid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:hint="0"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/land_area"
+        >
+        <TextView
+            android:id="@+id/l1"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LandMark 1 - "
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/al1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/l1"
+            android:hint="Area1"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/l2"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/l1"
+            android:text="LandMark 2 - "
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/al2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/l2"
+            android:layout_below="@+id/al1"
+            android:hint="Area2"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/l3"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/l2"
+            android:text="LandMark 3 - "
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/al3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/l3"
+            android:layout_below="@+id/al2"
+            android:hint="Area3"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/l4"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/l3"
+            android:text="LandMark 4 - "
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/al4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/l4"
+            android:layout_below="@+id/al3"
+            android:hint="Area4"
+            android:textSize="20sp"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white">
+
+        <CheckBox
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/check_box"
+            android:checked="true"
+            android:text="Fill Polygon"/>
+        <TextView
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:text="Polygon Color"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+        <SeekBar
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/seek_red"
+            android:max="255"
+            android:thumbTint="#FF0000"
+            android:progressTint="#FF0000"
+            android:layout_marginTop="5dp"
+            />
+        <SeekBar
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/seek_blue"
+            android:max="255"
+            android:thumbTint="#0000FF"
+            android:progressTint="#0000FF"
+            android:layout_marginTop="5dp"
+            />
+        <SeekBar
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/seek_green"
+            android:max="255"
+            android:thumbTint="#00ff00"
+            android:progressTint="#00FF00"
+            android:layout_marginTop="5dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/btmbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bt_draw"
+                android:text="Draw polygon"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bt_clear"
+                android:text="Clear"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bt_upload"
+                android:text="Upload Coordinates"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
