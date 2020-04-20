@@ -88,7 +88,3 @@ The Predictions will be shown in the website which will be easily interpreted by
 ![](images/pred1.jpg)
 ![](images/pred2.jpg)
 
->Contributors
->- naidukarthi2193
->- thirumalinambi14
->- venkster11
