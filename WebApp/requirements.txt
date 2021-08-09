@@ -62,7 +62,7 @@ pyreadline==2.1
 PySocks==1.7.1
 python-dateutil==2.8.1
 pytz==2019.3
-pywin32==227
+pywin32==301
 PyYAML==5.3
 pyzmq==18.1.1
 requests==2.22.0
